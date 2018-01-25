@@ -1,6 +1,8 @@
 HTML,BODY {
-    font-family:sans-serif;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #231f20;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -14,6 +16,7 @@ input::-webkit-inner-spin-button {
     left: 0;
     margin: 0;
     padding: 0;
+    min-width: 980px;
 }
 .decoration {
     height: 100%;
@@ -22,6 +25,27 @@ input::-webkit-inner-spin-button {
     position: relative;
     overflow: hidden;
     background-color: #61c5ff;
+}
+.banner_title, .banner_title_3d {
+    z-index: 10000;
+    position: absolute;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font: bold 68px Helvetica, Arial, Sans-Serif;
+    top: 67px;
+    left: 0;
+    right: 0;
+    color:  rgb(255, 243, 96);
+}
+.banner_title {
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgb(255, 243, 96) 0%, rgb(255, 223, 66) 26%, rgb(255, 210, 85) 35%, rgb(255, 240, 58) 45%, rgb(218, 182, 79) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner_title_3d {
+    text-shadow: 1px 3px #b79a00;
 }
 .layer {
     height: 100%;
@@ -44,16 +68,20 @@ input::-webkit-inner-spin-button {
     background-color: #fff;
 }
 .content, .header, .footer {
-    max-width: 900px;
+    max-width: 980px;
     width: 100%;
     margin: auto;
     clear: both;
 }
 .header {
     text-align: center;
+    font-size: 19px;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 .footer {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 200;
     text-align: center;
     position: relative;
     top: 30px;
@@ -78,8 +106,12 @@ input::-webkit-inner-spin-button {
 }
 .form-submit {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 54px;
 }
+.form-submit h1 {
+    font-size: 40px;
+}
+.form-submit h2{ font-weight: normal; }
 .form-submit h1, .form-submit h2{
     margin: 0;
 }
@@ -195,6 +227,7 @@ input::-webkit-inner-spin-button {
 }
 .income p {
     margin: 0;
+    font-size: 19px;
 }
 .income.active  {
     display: block;

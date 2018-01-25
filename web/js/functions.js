@@ -51,7 +51,7 @@ function loopTabs () {
             break;
         }
     }
-    tabsLoopTimout = setTimeout( function () { loopTabs() }, 4000 );
+    tabsLoopTimout = setTimeout( function () { loopTabs() }, 7000 );
 }
 
 function selectTab(elemId) {

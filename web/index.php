@@ -6,10 +6,15 @@
         <link type="text/css" href="css/styles.css?dev=<?= rand(0,1000); ?>" rel="stylesheet" />
         <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/functions.js?dev=<?= rand(0,1000); ?>"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,100, 500,300,700,700italic,400italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     </head>
     <body onresize="fluidLayout()" onload="initPage()">
     <div class="container" data-target="parallax" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative;">
         <div class="decoration" id="decoration">
+            <h1 class="banner_title_3d">CLOUD MINING:</h1>
+            <h1 class="banner_title">CLOUD MINING:</h1>
+            <h1 class="banner_title_3d" style="top: 131px;">A NEW WAY TO EARN MONEY</h1>
+            <h1 class="banner_title" style="top: 131px;">A NEW WAY TO EARN MONEY</h1>
             <div class="layer first" data-depth="0.15" style="transform: translate3d(-47.8625px, 13.8077px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1673 701">
                     <path id="path1"  d="M1672.53 223.22A131.77 131.77 0 0 0 1540.75 91.5q-2.59 0-5.15.1t-5.1.29a131.77 131.77 0 0 0-15 2q-4.9.95-9.66 2.25a131.37 131.37 0 0 0-43.41 21.1 132.19 132.19 0 0 0-43.74 56.26q-5.05-.39-10.22-.39a131.24 131.24 0 0 0-78.48 25.91 132.17 132.17 0 0 0-107.38-.09q-2.24-1.12-4.51-2.17a176.36 176.36 0 0 0-18.7-7.41q-2.4-.8-4.83-1.53-4.86-1.46-9.84-2.65-7.46-1.78-15.15-2.92a179.17 179.17 0 0 0-26.18-1.91 177.52 177.52 0 0 0-147 77.81 121 121 0 0 0-136.33 29.55 140.82 140.82 0 0 0-141.35 12.71 69.24 69.24 0 0 0-118.29-25.09 131.24 131.24 0 0 0-56.4-24.74v-2.55a131.79 131.79 0 0 0-196.31-114.89c-20.84-14.89-45.73-26.45-73.27-33.58a140 140 0 0 0-274 41V700.5h1672.08V223.22z" fill="#fffffe55" stroke-miterlimit="10"></path>
@@ -46,7 +51,7 @@
                 </p>
             </div>
             <div class="content">
-                <form id="hashpower-calculator" method="post" action="#">
+                <form id="hashpower-calculator" method="get" action="https://hashflare.io/r/7801996A">
                     <div class="calc-panel">
                         <h1>Calculate</h1>
                         <h2>Your Income Right Now</h2>
@@ -103,7 +108,7 @@
                     </div>
                     <div class="form-submit">
                         <div>
-                            <h2>Your Income:</h2>
+                            <h2>YOUR INCOME:</h2>
                             <div class="income active" id="btc-income">
                                 <h1>$</h1>
                                 <p>BTC</p>
@@ -191,7 +196,7 @@
                 <p>
                     Bitcoin mining is highly susceptible to changing factors, such as mining difficulty and currency rates.
                     All information provided here is a snapshot based on values taken at the time of calculation and is subject
-                    to some volatility due to Bitcoin’s inherent nature. We strongly encourage our customers to base their final
+                    to some volatility due to Bitcoin's inherent nature. We strongly encourage our customers to base their final
                     profit estimation on their own research. A helpful guide is provided within our <a href="#">FAQ</a>. We strongly recommend you to read our <a href="#">Terms of Use</a>.
                 </p>
             </div>
