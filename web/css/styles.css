@@ -1,0 +1,281 @@
+HTML,BODY {
+    font-family:sans-serif;
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.decoration {
+    height: 100%;
+    width: 106%;
+    left: -6%;
+    position: relative;
+    overflow: hidden;
+    background-color: #61c5ff;
+}
+.layer {
+    height: 100%;
+    width: 110%;
+}
+.layer.first img {
+    width: 40px;
+    position: absolute;
+}
+.layer.second img {
+    width: 55px;
+    position: absolute;
+}
+.wrap {
+    top: 0px;
+    left: 0;
+    width:  100%;
+    height:  100%;
+    position: relative;
+    background-color: #fff;
+}
+.content, .header, .footer {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+.header {
+    text-align: center;
+}
+.footer {
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.footer a {
+    color: #000;
+}
+.footer a:hover {
+    text-decoration: none;
+}
+#hashpower-calculator {
+    float: left;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.circuits {
+    position: absolute;
+    bottom: 56px;
+    left: -17px;
+}
+.form-submit {
+    text-align: center;
+    margin-top: 60px;
+}
+.form-submit h1, .form-submit h2{
+    margin: 0;
+}
+.form-submit a {
+    color: #61c5ff;
+    text-decoration: none;
+}
+.form-submit a:hover {
+    color: #F5921B;
+}
+#submit {
+    background: linear-gradient(#61c5ff, #459cc5);
+    border: 3px solid #31b0ff;
+    border-radius: 11px;
+    color: #fff;
+    width: 300px;
+    padding: 10px 30px;
+    position: relative;
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: bold;
+    text-shadow: 2px 2px #2d88ab;
+    display: inline-block;
+    outline: none;
+    margin-top: 15px;
+}
+#submit:hover {
+    background: linear-gradient(#F5921B, #b36b14);
+    text-shadow: 2px 2px #925b0e;
+    border: 3px solid #f57f00;
+}
+.calc-panel {
+    position:relative;
+    padding: 0px;
+    border: 2px solid #61c5ff;
+    border-top-right-radius: 8px;
+    margin: 25px 5px;
+}
+.calc-panel:before {
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    content: '';
+    border-bottom: 30px solid #61c5ff;
+    border-right: 30px solid transparent;
+}
+.calc-panel:after {
+    position: absolute;
+    left: -3px;
+    bottom: -4px;
+    content: '';
+    border-bottom: 30px solid white;
+    border-right: 30px solid transparent;
+}
+.calc-panel h1 {
+    margin: -25px 0px 0;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    font-size: 43px;
+    left: 10px;
+}
+.calc-panel h2 {
+    margin: 0;
+    text-align: left;
+    position: relative;
+    left: 13px;
+}
+.calc-panel-content {
+    margin: 15px 15px 20px;
+}
+.calc-panel-content label {
+    display: block;
+    text-align: center;
+}
+.hashpower > label:first-child, #investment > label:first-child {
+    font-weight: bold;
+    font-size: 24px;
+}
+.calc-panel-content input, .calc-panel-content select {
+    width: 145px;
+    padding: 3px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+#contract-info {
+    float: right;
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+.hashpower, .income {
+    display:none;
+}
+.hashpower.active, #investment, .contract-wrap, .period-wrap {
+    display: inline-block;
+    width: 43%;
+    padding: 3%;
+    position: relative;
+}
+.period-wrap img, .contract-wrap img {
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    width: 30px;
+}
+.contract-wrap img {
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    width: 22px;
+}
+.income p {
+    margin: 0;
+}
+.income.active  {
+    display: block;
+}
+.tab {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    background: url('../img/spritemap.png');
+}
+#btc-tab.active {
+    background-position: 0px 0px;
+}
+#btc-tab {
+    background-position: 0px 50px;
+}
+#eth-tab.active {
+    background-position: -50px 0px;
+}
+#eth-tab {
+    background-position: -50px 50px;
+}
+#zec-tab.active {
+    background-position: -100px 0px;
+}
+#zec-tab {
+    background-position: -100px 50px;
+}
+#ltc-tab.active {
+    background-position: -150px 0px;
+}
+#ltc-tab {
+    background-position: -150px 50px;
+}
+.panel {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    height: 0;
+}
+.panel.active {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+.panel h1 {
+    margin: 0;
+}
+.panel p {
+    margin: 5px 0px;
+    position: relative;
+}
+.panel > p:nth-child(2), .panel > p:nth-child(3), .panel > p:nth-child(4) {
+    font-size: 18px;
+    margin-left: 25px;
+}
+.panel img {
+    width: 17px;
+    position: absolute;
+    left: -25px;
+}
+p.nb {
+    margin: 15px 0px !important;
+    color: #444;
+}
+.market-value {
+    margin-top: 25px;
+}
+.market-value h2 {
+    margin-bottom: 0;
+}
+.market-value p {
+    color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px 25px;
+    margin: 20px 0px 10px;
+}
+#btc-panel .market-value p { background-color: #F5921B; }
+#eth-panel .market-value p { background-color: #567499; }
+#zec-panel .market-value p { background-color: #F1BE4F; }
+#ltc-panel .market-value p { background-color: #183964; }
