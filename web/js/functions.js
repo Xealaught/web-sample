@@ -3,7 +3,7 @@ var coinData = null;
 var completeRequests = 0;
 
 function initPage () {
-    fluidLayout();
+   // fluidLayout();
     parseInputs();
 
     // begin looping through cryptocoin tabs
@@ -18,12 +18,12 @@ function initPage () {
     }
 }
 
-function fluidLayout() {
-    var wrap = document.getElementById('wrap');
-    var decoration = document.getElementById('decoration');
-
-    wrap.style.top = '-' + (decoration.clientWidth * 0.119) + 'px';
-}
+//function fluidLayout() {
+//    var wrap = document.getElementById('wrap');
+//    var decoration = document.getElementById('decoration');
+//
+//    wrap.style.top = '-' + (decoration.clientWidth * 0.119) + 'px';
+//}
 
 function loopTabs () {
     var panels = document.getElementsByClassName('panel');
